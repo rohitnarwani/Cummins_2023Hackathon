@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import axios from "axios"
 import styles from "./Vendor.module.css"
 const URL="https://canteensystem.azurewebsites.net/"
-const WEB_SOCK="wss://canteensystem.azurewebsites.net/ws/notifications/neworders"
 
 function VendorItem({m, id, handler}) {
   function getOn() {
@@ -16,7 +15,7 @@ function VendorItem({m, id, handler}) {
   );
 }
 
-function Vendor(props){
+function Vendor(){
     let [orders, setOrders] = useState([])
     let [loading, setLoading ] = useState(true)
     let [first, setFirst] = useState(true);
@@ -43,7 +42,6 @@ function Vendor(props){
         }).then(function (response) {
             if (response.data !== undefined){
             setLoading(false)
-            setOrders(response.data)
             setFirst(true)
             }
         }).catch(function (error) {
@@ -52,8 +50,7 @@ function Vendor(props){
     }
 
     if (first) {
-        axios.get(URL + `/orders`, {}).
-            then(function (response) {
+        axios.get(URL + `/orders`, {}).then(function (response) {
                 setOrders(response.data)
                 setLoading(false)
             }).catch(function (error) {
