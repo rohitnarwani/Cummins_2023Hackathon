@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Account registration form</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      body {
+  background-image: url(img.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: rgb(245, 255, 250);
+  font-family: Perpetua;
+  font-size: 24px;
+}
+
+h1, p {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.established {
+  font-style: italic;
+}
+
+form {
+  background-color: rgba(16, 15, 15, 0.9);
+  color: rgb(245, 255, 250);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(255, 215, 0);
+  width: 60vw;
+  max-width: 700px;
+  min-width: 350px;
+  margin: 0 auto;
+  padding: 15px 15px 25px 15px;
+}
+
+label {
+  display: block;
+}
+
+fieldset {
+  border: none;
+}
+
+input,
+select,
+textarea {
+  width: 80%;
+  margin: 0.1em 0 1em 0;
+  min-height: 2em;
+  font-size: 0.67em;
+}
+
+input,
+select {
+  border-radius: 5px;
+}
+
+textarea {
+  min-height: 6.33em;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: rgb(253, 251, 253);
+  border-color: rgb(3, 3, 3);
+  color: rgb(6, 6, 6);
+  font-size: 1.33rem;
+  min-height: 1.5em;
+  margin-left:20px;
+  margin-right:20px;
+}
+
+input[type="submit"]:hover {
+  outline: none !important;
+  border: 2px solid rgb(0, 255, 255);
+  box-shadow: 0 0 10px rgb(0, 127, 127);
+  cursor: pointer;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus {
+  outline: none !important;
+  box-shadow: 0 0 7px rgb(0, 255, 255);
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  min-height: unset;
+  vertical-align: middle;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="main-block">
+        <form action="connect2.php" method="post">
+          <h1>Oxygen Contribution</h1>
+          <fieldset>
+            
+          </fieldset>
+          <fieldset>
+            <legend class="td">
+              <h3>Trees Planted</h3>
+            </legend>
+            <div  class="transportation-details">
+                <div>
+                    <div>
+                        <label>City*</label>
+                        <select name="city" required>
+                          <option value=""></option>
+                          <option value="Pune">Pune</option>
+                          <option value="Mumbai">Mumbai</option>
+                          <option value="Nashik">Nashik</option>
+                          <option value="Nagpur">Nagpur</option>
+                          <option value="Ahmednagar">Ahmednagar</option>
+                          <option value="Amravati">Amravati</option>
+                        </select>
+                        
+                      </div>
+
+                      <div>
+                        <label>Species*</label>
+                        <select name="species" required>
+                          <option value=""></option>
+                          <option value="aloevera">Aloevera</option>
+                          <option value="snakeplant">Snake plant</option>
+                          <option value="lily">Lily</option>
+                          <option value="basil">Basil</option>
+                          <option value="banyan">Banyan tree</option>
+            
+                        </select>
+                        
+                      </div>
+
+                      <div>
+                        <label>Sunlight intensity*</label>
+                        <select name="sunlight" required>
+                          <option value=""></option>
+                          <option value="500">Indoor</option>
+                          <option value="1000">Outdoor</option>
+                          <option value="730">Semi-indoor</option>
+                          
+                        </select>
+                        
+                      </div>
+
+                      <div><label>Number of plants of this species</label><input type="number" name="quantity" required></div>
+                      <div><label>Average height of the plants(in meters)*</label><input type="number" name="height" required></div>
+                      
+                </div>
+                
+                
+            
+            
+            
+          </div>
+         
+      </fieldset>
+      <button type="submit" name="submit" value="2" href="form_3.html">Add Another City</button>
+      <button type="submit" href="">Submit</button>
+    </form>
+    </div> 
+
+
+          
+          
+        </form>
+        </div> 
+        <script>
+          const x = document.getElementById("demo");
+          const key=`8e749a3f530dc1e929afa1200447b60a`
+          let result = document.getElementById("result");
+          let searchBtn = document.getElementById("search-btn");
+          let cityRef = document.getElementsById("city");
+          getWeather();
+          //Function to fetch weather details from api and display them
+          let getWeather = () => {
+            let cityValue = cityRef.value;
+            //If input field is empty
+            if (cityValue.length == 0) {
+              let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${key}&units=metric`;
+              //Clear the input field
+              cityRef.value = "";
+              fetch(url)
+                .then((resp) => resp.json())
+                function passVal(){
+                  var data = {
+                      min: data.main.temp_min,
+                      max: data.main.temp_max,
+                  };
+          
+                  $.post("connect2.php", data);
+              }
+            }
+            //If input field is NOT empty
+            else {
+              let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${key}&units=metric`;
+              //Clear the input field
+              cityRef.value = "";
+              fetch(url)
+                .then((resp) => resp.json())
+                function passVal(){
+                  var data = {
+                      min: parseFloat(data.main.temp_min),
+                      max: parseFloat(data.main.temp_max),
+                  };
+          
+                  $.post("connect2.php", data);
+              }
+              passVal();
+                //If city name is valid
+                /*.then((data) => {
+                  console.log(data);
+                  console.log(data.weather[0].icon);
+                  console.log(data.weather[0].main);
+                  console.log(data.weather[0].description);
+                  console.log(data.name);
+                  console.log(data.main.temp_min);
+                  console.log(data.main.temp_max);
+                  result.innerHTML = `
+                  <h2>${data.name}</h2>
+                  <h4 class="weather">${data.weather[0].main}</h4>
+                  <h4 class="desc">${data.weather[0].description}</h4>
+                  <img src="https://openweathermap.org/img/w/${data.weather[0].icon}.png">
+                  <h1>${data.main.temp} &#176;</h1>
+                  <div class="temp-container">
+                      <div>
+                          <h4 class="title">min</h4>
+                          <h4 class="temp">${data.main.temp_min}&#176;</h4>
+                      </div>
+                      <div>
+                          <h4 class="title">max</h4>
+                          <h4 class="temp">${data.main.temp_max}&#176;</h4>
+                      </div>
+                  </div>
+                  `;
+                })
+                //If city name is NOT valid
+                .catch(() => {
+                  result.innerHTML = `<h3 class="msg">City not found</h3>`;
+                });*/
+                
+            }
+          };
+          getWeather;
+          searchBtn.addEventListener("click", getWeather);
+          window.addEventListener("load", getWeather);
+          </script>
+  </body>
+</html>

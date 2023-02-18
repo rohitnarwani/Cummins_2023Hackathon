@@ -1,0 +1,238 @@
+*
+{
+  margin:0px;
+  padding:0px;
+  font-family: 'Poppins', sans-serif;
+}
+/* Header css */
+.headerr
+{
+  background-image: linear-gradient(rgba(4,9,30, 0.7),rgba(4,9,30, 0.7)),url("earth.jpeg");
+  min-height: 100vh; /*Dout*/
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+/* navbar css */
+nav
+{
+  display: flex;
+  align-items: center;
+  padding: 2% 3%;
+  justify-content:space-between;
+}
+nav img
+{
+   width:16%;
+   opacity: 0.6;
+}
+.nav-link ul li
+{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+}
+.nav-link ul li a
+{
+  color: white;
+  text-decoration: none;
+  font-size: 90%;
+}
+/* nav underline css */
+.nav-link ul li::after
+{
+  content: '';
+  width: 0%;
+  height: 2px; /* thickness of underline*/
+  background: #f44336;
+  display:block;
+  transition: 0.5s;
+}
+.nav-link ul li:hover::after
+{
+  width: 100%;
+}
+/* Text box css */
+.text-box
+{
+  text-align: center;
+  color: white;
+}
+ .text-box h1 
+{
+  font-size:350%;
+  margin-top: 10%;
+}
+.text-box p
+{
+  font-size: 94%;
+  margin: 2%;
+}
+/* visit btn css */
+.hero-btn
+{
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  border: 1px solid white;
+  padding:0.5% 0.5%;
+  font-size:80%;
+  background: transparent;
+  cursor: pointer;
+}
+.hero-btn:hover
+{
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+}
+/* Courses css */
+.course
+{
+  text-align: center;
+  padding:3%;
+}
+.container
+{
+  display: flex;
+  margin: 2%;
+  padding:4%;
+  justify-content: space-between;
+}
+.box
+{
+  margin: -35px 16px;
+  padding: 6px 39px;
+  height: 25vh;
+  border-radius:10px;
+  width: 100%;
+  background: #ade5a9;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.box h3
+{
+  font-size:130%;
+  padding: 3%;
+  text-align: center;
+}
+.box p
+{
+  font-size: 90%;
+  font-weight: 300;
+}
+.box:hover
+{
+  box-shadow: 0px 0px 20px 0px rgba(67, 67, 67, 0.2);
+}
+
+
+/* Facility css */
+.fac-col
+{
+  display: flex;
+  justify-content: space-between;
+}
+.facility h1
+{
+  width:80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.fac img
+{
+    width: 92%;
+    height: 59%;
+    margin: 34px 0px;
+    padding: 1px 0px;
+    border-radius: 10px;
+    display: block;
+}
+.fac h3
+{
+  margin-top: -27px;
+  font-size: 20px;
+}
+.fac p
+{
+  text-align: center;
+  font-size: 12px;
+}
+/* testimonials css */
+.review h1
+{
+  width:80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.review p
+{
+  text-align: center;
+  font-size: 12px;
+}
+.review-container
+{
+  display: flex;
+  justify-content: center;
+}
+.review-box
+{
+ margin: 22px 16px;
+ padding: 6px 39px;
+ height: 22vh;
+ border-radius: 10px;
+ width: 32%;
+ background:#ade5a9;
+}
+.review-box img
+{
+  width:47px;
+  height:47px;
+  border-radius:50%;
+  margin-top: 10px;
+  margin-left: -12px;
+}
+.review-box p
+{
+  margin-left: 50px;
+  margin-bottom: 12px;
+  margin-top: -43px;
+  text-align: justify;
+}
+.review-box h2
+{
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+.review-box .fa
+{
+  font-size: 10px;
+  color: #f44336;
+}
+
+/* Footer */
+.footer
+{
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+}
+.footer h4
+{
+  margin-bottom: 4%;
+  font-weight: 600;
+}
+/* Footer Icons css */
+.icons .fa
+{
+  color: #f44336;
+  margin: 0 13px;
+  padding: 10px 0;
+}
+.fa-heart-o
+{
+  color: #f44336;
+}
