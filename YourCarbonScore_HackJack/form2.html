@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Account registration form</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      body {
+  background-image: url(img.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: rgb(245, 255, 250);
+  font-family: Perpetua;
+  font-size: 24px;
+}
+
+h1, p {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.established {
+  font-style: italic;
+}
+
+form {
+  background-color: rgba(16, 15, 15, 0.9);
+  color: rgb(245, 255, 250);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(255, 215, 0);
+  width: 60vw;
+  max-width: 700px;
+  min-width: 350px;
+  margin: 0 auto;
+  padding: 15px 15px 25px 15px;
+}
+
+label {
+  display: block;
+}
+
+fieldset {
+  border: none;
+}
+
+input,
+select,
+textarea {
+  width: 80%;
+  margin: 0.1em 0 1em 0;
+  min-height: 2em;
+  font-size: 0.67em;
+}
+
+input,
+select {
+  border-radius: 5px;
+}
+
+textarea {
+  min-height: 6.33em;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: rgb(253, 251, 253);
+  border-color: rgb(3, 3, 3);
+  color: rgb(6, 6, 6);
+  font-size: 1.33rem;
+  min-height: 1.5em;
+  align-self: center;margin-left: 40%;
+}
+
+input[type="submit"]:hover {
+  outline: none !important;
+  border: 2px solid rgb(0, 255, 255);
+  box-shadow: 0 0 10px rgb(0, 127, 127);
+  cursor: pointer;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus {
+  outline: none !important;
+  box-shadow: 0 0 7px rgb(0, 255, 255);
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  min-height: unset;
+  vertical-align: middle;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="main-block">
+    <form name="vehicle" action="connect1.php" method="post">
+      <h1>Vehicle Emission</h1>
+      <fieldset>
+        
+      </fieldset>
+      <fieldset>
+        <legend class="td">
+          <h3>Tranportation Details</h3>
+        </legend>
+        <div  class="transportation-details">
+         
+            
+            <div>
+              <label>Number of Vehicles*</label>              
+              <select name="vehicles" type="number"  class="s1" required>
+                <option value=""> -- Select Number Of Vehicles --</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="0">0</option>
+              </select>
+            </div>
+<div>
+
+<label margin-bottom 120px>Total petrol in litres*</label>
+<input type="number" name="petrol" required>
+</div>
+<div>
+<label margin-bottom 120px>Total deisel in litres*</label>
+<input type="number" name="diesel" required>
+           
+          </div>
+        </div>
+      
+      
+      
+          <h1 >Electrical Usage</h1>
+          <fieldset class="f1">
+            
+          </fieldset>
+          <fieldset>
+            <legend class="ed">
+              <h3>Electrical Details</h3>
+            </legend>
+            <div  class="transportation-details">
+             
+                
+     <div class="eubox">         
+    <div >
+    <label margin-bottom 120px >No. of Refrigerators*</label>
+    <input type="number" name="refridgerator" required>
+    </div>
+    <div>
+    <label margin-bottom 120px>No. of Air conditioners*</label>
+    <input type="number" name="diesel" required>          
+    </div>
+    <div>
+    <label margin-bottom 120px >No. of ovens*</label>
+    <input type="number" name="oven" required>
+    </div>
+    <div>
+    <label margin-bottom 120px>No. of Mixer*</label>
+    <input type="number" name="mixer" required>
+    </div>
+    <div>
+    <div>
+    
+        <label margin-bottom 120px>Total electricity used this month*</label>
+        <input type="number" name="electricity" style="width: 55.2%;" required>
+        </div>
+        <div>
+            <label>Unit*</label>              
+              <select name="unit"  class="uni"required>
+                <option value=""></option>
+                <option value="1">kwh</option>
+                
+                
+              </select>
+        </div>
+    </div>
+</div>
+</div>  
+
+      <h1 class>LPG Usage</h1>
+      <fieldset class="f2">
+        
+      </fieldset>
+      <fieldset>
+        <legend class="ld">
+          <h3>LPG details</h3>
+        </legend>
+        <div  class="personal-details">
+          <div>
+          <div  class="moc">
+              <label>Mode of Cooking*</label>
+              <select name="cook" class="s5" required>
+                <option value=""></option>
+                <option value="0.2983">LPG</option>
+                <option value="0.1962">Biomass</option>
+
+              </select>
+              <br>
+              <label margin-bottom 120px>Total fuel used this month (in kg)*</label>
+        <input type="number" name="fuel" style="width: 55.2%;" required>
+            </div>
+            
+            
+            
+          </div>
+         
+      </fieldset>
+      
+      <button type="submit" href="form_6.php">SUBMIT</button>
+    </form>
+    </div> 
+
+
+          
+          
+        </form>
+        </div> 
+  </body>
+</html>

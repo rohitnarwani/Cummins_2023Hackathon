@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Account registration form</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      body {
+  background-image: url(img.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: rgb(245, 255, 250);
+  font-family: Perpetua;
+  font-size: 24px;
+}
+
+h1, p {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.established {
+  font-style: italic;
+}
+
+form {
+  background-color: rgba(16, 15, 15, 0.9);
+  color: rgb(245, 255, 250);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(255, 215, 0);
+  width: 60vw;
+  max-width: 700px;
+  min-width: 350px;
+  margin: 0 auto;
+  padding: 15px 15px 25px 15px;
+}
+
+label {
+  display: block;
+}
+
+fieldset {
+  border: none;
+}
+
+input,
+select,
+textarea {
+  width: 80%;
+  margin: 0.1em 0 1em 0;
+  min-height: 2em;
+  font-size: 0.67em;
+}
+
+input,
+select {
+  border-radius: 5px;
+}
+
+textarea {
+  min-height: 6.33em;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: rgb(253, 251, 253);
+  border-color: rgb(3, 3, 3);
+  color: rgb(6, 6, 6);
+  font-size: 1.33rem;
+  min-height: 1.5em;
+  align-self: center;margin-left: 40%;
+}
+
+input[type="submit"]:hover {
+  outline: none !important;
+  border: 2px solid rgb(0, 255, 255);
+  box-shadow: 0 0 10px rgb(0, 127, 127);
+  cursor: pointer;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus {
+  outline: none !important;
+  box-shadow: 0 0 7px rgb(0, 255, 255);
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  min-height: unset;
+  vertical-align: middle;
+}
+.checkbox{
+  margin-right: 93%;
+}
+.gender{
+  margin-right:93%;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="main-block">
+        <form action="connect.php" method="post">
+          <h1>Basic Info</h1>
+          <fieldset>
+            
+          </fieldset>
+          <fieldset>
+            <legend class="td">
+              <h3>Personal Details</h3>
+            </legend>
+            <div  class="transportation-details">
+         
+            
+                <div>
+                    <div><label>Name*</label><input type="text" name="name" required></div>
+                    <div><label>Phone*</label><input type="text" name="phone" required></div>
+                    <div><label>Street</label><input type="text" name="street"></div>
+                    
+                    <div>
+                      <label>Country*</label>  
+                      <select type="text" name="country">
+                        <option value=""></option>
+                        <option value="India">India</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Germany">Germany</option>
+                        <option value="France">France</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                      </select>
+                    </div>
+                    <div><label>ZipCode</label><input type="text" name="zip"></div>
+                  </div>
+                  <div>
+                    <div>
+                      <label>Gender*</label>
+                      <div class="gender">
+                        <input type="radio" value="male" id="male" name="gender" required/>
+                        <label for="male" class="radio" value="male">Male</label><br>
+                        <input type="radio" value="female" id="female" name="gender" required/>
+                        <label for="female" class="radio">Female</label>
+                      </div>
+                    </div>
+                    <div class="birthdate">
+                      <label>Birthdate*</label>
+                      <div class="bdate-block">
+                        
+                       
+        
+        <input type="date" id="start" name="trip-start"
+               value="2018-07-22"
+               min="1970-01-01" max="2020-12-31">
+        
+                      </div>
+                    </div>
+                    <div>
+                      <label>State*</label>              
+                      <select name="city" required>
+                        <option value=""></option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Goa">Goa</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>City*</label>
+                      <select name="state" required>
+                        <option value=""></option>
+                        <option value="Pune">Pune</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Nashik">Nashik</option>
+                        <option value="Nagpur">Nagpur</option>
+                        <option value="Ahmednagar">Ahmednagar</option>
+                        <option value="Amravati">Amravati</option>
+                      </select>
+                      
+                    </div>
+                  </div>
+                </div>
+            </fieldset>
+            <fieldset>
+              <legend>
+                <h3>Terms and Mailing</h3>
+              </legend>
+              <div  class="terms-mailing">
+                <div class="checkbox">
+                  <input type="checkbox" name="checkbox">
+
+                </div>
+                <span> I accept the <a href="https://www.w3docs.com/privacy-policy">Privacy Policy for CarboPrint.</a></span>
+                <div class="checkbox">
+                  <input type="checkbox" margin-left="40%" name="checkbox">
+                </div>
+                <span>I want to recelve personallzed offers by your site</span>
+            </fieldset>
+            <button type="submit" href="form2.html">Next Page</button>
+       
+  </body>
+</html>
