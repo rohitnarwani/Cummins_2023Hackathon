@@ -1,0 +1,13 @@
+{% block body_block %}
+<div class="container">
+<form action="" method="POST">
+    {% csrf_token %} 
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">ENDTIME</label>
+      <input type="datetime-local" class="form-control" id="endtime1" name="endtime">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+{% endblock %}
