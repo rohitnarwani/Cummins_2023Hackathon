@@ -1,0 +1,71 @@
+.chatsection {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80% 20%;
+  background-color: #f5fefd;
+}
+.replyarea {
+  width: 90%;
+  font-size: 20px;
+  text-align: justify;
+}
+.inputarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chatform {
+  height: 60%;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 90% 10%;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-rows: 100%;
+}
+.inputFeild {
+  outline: none;
+  height: 60%;
+  border-radius: 10px;
+  border: 2px solid grey;
+  font-size: 20px;
+  padding: 0px 20px;
+  width: 90%;
+}
+.subbutton {
+  height: 60%;
+  width: 100%;
+  font-size: 20px;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+
+.question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  height: 20%;
+}
+.answer {
+  width: 100%;
+  padding-left: 20px;
+  height: 80%;
+}
+.ansele {
+  margin: 20px 0px;
+}
+
+.summarytxt {
+  border: 1px solid grey;
+  padding: 9px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.line {
+  height: 2px;
+  width: 75vw;
+  background-color: grey;
+}
