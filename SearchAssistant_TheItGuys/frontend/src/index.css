@@ -1,0 +1,9 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-size: 25px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
