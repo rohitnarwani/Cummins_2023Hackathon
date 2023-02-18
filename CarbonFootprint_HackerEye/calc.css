@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #EBD9DD, #D8AED3, #9182C4,#486989);
+  background-size: 200% auto;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.category1{
+  background-color: #E7F6F2;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 25px;
+  padding-bottom: 1rem;
+  padding-top:1rem;
+}
+
+.category2{
+  background-color: #A5C9CA;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 25px;
+  padding-bottom: 1rem;
+  padding-top:1rem;
+}
+
+.category3{
+  background-color:#6B728E;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 25px;
+  padding-bottom: 1rem;
+  padding-top:1rem;
+}
+
+.oxy{
+  background-color: #474E68;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 25px;
+  padding-bottom: 1rem;
+  padding-top:1rem;
+}
+
+button{
+  background-color:#D8D8D8;
+  border-radius:10px;
+}
+button:hover{
+  background-color: #E5E5CB;
+}
+button:active{
+  background-color: #5C527F;
+}
+.random{
+  background-color: #D8D8D8;
+  border-radius: 15px;
+}
