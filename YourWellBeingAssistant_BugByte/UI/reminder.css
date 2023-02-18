@@ -1,0 +1,44 @@
+  body{
+    background: #cca8d3;
+    padding: 0;
+    margin: 0;
+  }
+
+  .reminder-box{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 200px;
+    color: #150319;
+    background: #dfc263;
+    position: relative;
+    padding: 20px;
+    margin: auto;
+}
+
+.reminder-box h1 {
+    font-size: 50px; 
+    margin-top: 40px;
+}
+
+.reminder-box p{
+    margin: 30px auto;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 0;
+}
+  
+  h3 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
