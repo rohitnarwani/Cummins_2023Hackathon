@@ -1,0 +1,227 @@
+import datetime
+from list import *
+
+class canteen:
+
+    t2 = 0
+    t4 = 0
+    t6 = 0
+    t8 = 0
+    def getseating():
+        print("Enter the number of 2 people sittings")
+        canteen.t2 = int(input())
+        print("Enter the number of 4 people sittings")
+        canteen.t4 = int(input())
+        print("Enter the number of 6 people sittings")
+        canteen.t6 = int(input())
+        print("Enter the number of 8 people sittings")
+        canteen.t8 = int(input())
+
+    def menu():
+            
+            ind = {1: "9:00", 2: "9:45", 3: "10:30", 4: "11:15", 5: "12:00", 6: "12:45", 7: "1:30", 8: "2:15", 9: "3:00",
+                   10: "3:45", 11: "4:30", 12: "5:15"}
+            
+            seats_at_slot = []
+                
+            for slots in range(len(ind)):
+                seats_at_slot.append(Seating(t2 = canteen.t2, t4 = canteen.t4, t6= canteen.t6, t8 = canteen.t8))
+
+            while True:
+                day=input("Enter The Day")
+                print("Enter the Time Slot among the following by index")
+                print(list(ind.values()))
+                time_slot = int(input())
+
+                print("Enter your name")
+                name = input()
+
+                print("Enter the number of customers")
+                nos_people = int(input())
+
+                tableState = seats_at_slot[time_slot - 1].assignTables(t2 = canteen.t2, t4 = canteen.t4, t6= canteen.t6, t8 = canteen.t8, numpeople= nos_people)
+                if tableState:
+                    data_read = [name, nos_people, tableState , list(ind.values())[time_slot - 1],seats_at_slot[time_slot - 1].get_token()]
+                    data_read.extend(canteen.take_order(day))
+                    with open('orders.txt', 'a') as fname:
+                        fname.write(str(data_read))
+                        fname.write("\n")
+                else:
+                    print("The tables for the timeslot are full")
+
+                print(data_read)
+
+
+
+
+
+    def take_order(day):
+            total_sum = 0
+            orders = []
+            if day.lower()== "monday":
+                print(l1)
+                print("Enter the number of items you want to order")
+                num_items = int(input())
+                while num_items > 0:
+                    n = int(input("enter the food index item you want"))
+                    if n < len(l1):
+                        n -= 1
+                        num_items -= 1
+                        print("your choosen item is ",l1[n]," with price",d1[l1[n]])
+                        orders.append(l1[n])
+                        total_sum += d1[l1[n]]
+                    else:
+                        print("your input exceeds the number of items")
+
+
+
+            elif day.lower() == "tuesday":
+                print(l2)
+                print("Enter the number of items you want to order")
+                num_items = int(input())
+                while num_items > 0:
+                    n = int(input("enter the food index item you want"))
+                    if n < len(l2):
+                        n -= 1
+                        num_items -= 1
+                        print("your choosen item is ", l2[n], " with price", d2[l2[n]])
+                        orders.append(l2[n])
+                        total_sum += d2[l2[n]]
+                    else:
+                        print("your input exceeds the number of items")
+
+            elif day.lower()=="wednesday":
+                print(l3)
+                print("Enter the number of items you want to order")
+                num_items = int(input())
+                while num_items > 0:
+                    n = int(input("enter the food index item you want"))
+                    if n < len(l3):
+                        n -= 1
+                        num_items -= 1
+                        print("your choosen item is ", l3[n], " with price", d3[l3[n]])
+                        orders.append(l3[n])
+                        total_sum += d3[l3[n]]
+                    else:
+                        print("your input exceeds the number of items")
+
+            elif day.lower()=="thursday":
+                print(l4)
+                print("Enter the number of items you want to order")
+                num_items = int(input())
+                while num_items > 0:
+                    n = int(input("enter the food index item you want"))
+                    if n < len(l4):
+                        n -= 1
+                        num_items -= 1
+                        print("your choosen item is ", l4[n], " with price", d4[l4[n]])
+                        orders.append(l4[n])
+                        total_sum += d4[l4[n]]
+                    else:
+                        print("your input exceeds the number of items")
+
+            elif day.lower()=="friday":
+                print(l5)
+                print("Enter the number of items you want to order")
+                num_items = int(input())
+                while num_items > 0:
+                    n = int(input("enter the food index item you want"))
+                    if n < len(l5):
+                        n -= 1
+                        num_items -= 1
+                        print("your choosen item is ", l5[n], " with price", d5[l5[n]])
+                        orders.append(l5[n])
+                        total_sum += d5[l5[n]]
+                    else:
+                        print("your input exceeds the number of items")
+            elif day.lower()=="saturday":
+                print(l6)
+                print("Enter the number of items you want to order")
+                num_items = int(input())
+                while num_items > 0:
+                    n = int(input("enter the food index item you want"))
+                    if n < len(l6):
+                        n -= 1
+                        num_items -= 1
+                        print("your choosen item is ", l6[n], " with price", d6[l6[n]])
+                        orders.append(l6[n])
+                        total_sum += d1[l1[n]]
+                    else:
+                        print("your input exceeds the number of items")
+
+            else:
+                print("WE ARE CLOSED TODAY SORRY!!!")
+
+            print("Your total sum of orders is Rs.", total_sum)
+            orders.append(str(total_sum))
+
+            return orders
+
+class Seating:
+    v2 = {}
+    v4 = {}
+    v6 = {}
+    v8 ={}
+    token_no = 0
+    def __init__(self, t2, t4, t6, t8):
+        for tables in range(t2):
+            self.v2.__setitem__(tables, 2)
+        for tables in range(t4):
+            self.v4.__setitem__(tables, 4)
+        for tables in range(t6):
+            self.v6.__setitem__(tables, 6)
+        for tables in range(t8):
+            self.v8.__setitem__(tables, 8)
+
+    def assignTables(self, t2, t4, t6 ,t8, numpeople):
+
+
+
+        vacancy_checker = []
+        vacancy_checker.extend(self.v2.values())
+        vacancy_checker.extend(self.v4.values())
+        vacancy_checker.extend(self.v6.values())
+        vacancy_checker.extend(self.v8.values())
+
+        if max(vacancy_checker) == 0:
+            return 0
+
+
+
+        if numpeople <= max(self.v2.values()):
+            table = int(list(self.v2.values()).index(max(self.v2.values())))
+            self.v2[table] = self.v2[table] - numpeople
+            table_number = int(table) + 1
+
+            return table_number
+
+        if numpeople <= max(self.v4.values()):
+            table = int(list(self.v4.values()).index(max(self.v4.values())))
+            self.v4[table] = self.v4[table] - numpeople
+            table_number = int(table) + 1 + t2
+
+            return table_number
+
+        if numpeople <= max(self.v6.values()):
+            table = int(list(self.v6.values()).index(max(self.v6.values())))
+            self.v6[table] = self.v6[table] - numpeople
+            table_number = int(table) + 1 + t4 + t2
+
+            return table_number
+
+        if numpeople <= max(self.v8.values()):
+            table = int(list(self.v8.values()).index(max(self.v8.values())))
+            self.v8[table] = self.v8[table] - numpeople
+            table_number = int(table) + 1 + t2 + t4 + t6
+
+            return table_number
+
+        else:
+            return 0
+
+    def get_token(self):
+        self.token_no += 1
+        return self.token_no
+
+canteen.getseating()
+canteen.menu()
