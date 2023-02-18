@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+
+.loginBody {
+  font-family: Source Sans 3;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  background: #E2E2E2;
+  border-radius: 1rem;
+}
+
+input {
+  margin: 1rem;
+  border-width: 0px;
+  border-radius: 0.7rem;
+  background: white;
+  padding: 1rem;
+}
+
+span {
+  margin: 1rem;
+  margin-bottom: 0px;
+}
+
+.buttonBox {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1rem;
+}
+
+.cla {
+  display: flex;
+  justify-content: center;
+}

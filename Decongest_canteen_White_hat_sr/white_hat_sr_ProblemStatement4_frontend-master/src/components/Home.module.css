@@ -1,0 +1,27 @@
+body {
+    background-color: #EDEDED;
+}
+
+h1 {
+    margin: 0rem;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    max-height: 2rem;
+    margin: 1rem;
+}
+
+.submit {
+    border-color: grey;
+}
+
+.sview {
+    padding: 10%;
+}
+
+.submit {
+    background: #b1b1b1;
+}

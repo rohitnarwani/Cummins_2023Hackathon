@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;1,700&display=swap');
+
+:root {
+  --card-height: 200px;
+  --card-width: 100px;
+}
+
+.foodCard {
+  display: flex;
+  background: white;
+  padding: 0.6rem;
+  flex-direction: column;
+  max-width: var(--card-width);
+  min-width: var(--card-width);
+  max-height: var(--card-height);
+  min-height: var(--card-height);
+  justify-content: space-between;
+  border-radius: 1rem;
+  margin: 0.4rem;
+}
+
+.plus,
+.quantity,
+.addButton,
+.minus {
+  margin: 0.5rem;
+  color: green;
+}
+
+.foodImage {
+  max-height: calc(var(--card-height) / 2);
+  min-height: calc(var(--card-height) / 2);
+  margin: 0rem;
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+}
+
+.portionButton{
+  display: flex;
+  justify-content: space-evenly;
+  background: #ededed;
+  border-radius: 1rem;
+}
+
+button {
+  border-width: 0rem;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+
+.foodDescription {
+    display: flex;
+    flex-direction: column;
+}
+
+.foodName,
+.foodPrice {
+    margin: 0rem;
+    text-align: center;
+}
+
+button:hover {
+    background: green;
+    color: white;
+}
