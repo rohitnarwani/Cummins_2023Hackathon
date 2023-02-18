@@ -1,0 +1,218 @@
+Electricity(units),Age,Maintenance,Appliance type,CO2 Emissions
+345,2,Regular,Washing Machine,0.6
+450,3,Regular,Dryer,0.8
+275,1,Irregular,Dishwasher,0.5
+420,2,Regular,Refrigerator,0.7
+200,5,Regular,Television,0.4
+360,4,Irregular,Oven,0.6
+310,3,Regular,Freezer,0.5
+385,1,Irregular,Vacuum Cleaner,0.6
+250,4,Regular,Microwave,0.4
+295,2,Regular,Coffee Maker,0.5
+375,3,Regular,Toaster,0.6
+290,1,Irregular,Iron,0.5
+430,5,Regular,Water Heater,0.8
+260,2,Regular,Blender,0.5
+370,3,Regular,Air Conditioner,0.6
+415,4,Irregular,Furnace,0.7
+305,1,Irregular,Hair Dryer,0.5
+385,2,Regular,Stove,0.6
+200,3,Regular,Light Bulb,0.3
+240,4,Irregular,Heater,0.4
+350,1,Irregular,Food Processor,0.6
+275,2,Regular,Ice Maker,0.5
+390,3,Regular,Ceiling Fan,0.6
+325,5,Regular,Computer,0.5
+290,1,Irregular,Toaster Oven,0.5
+370,4,Regular,Dryer,0.6
+400,2,Regular,Washing Machine,0.7
+255,3,Regular,Dishwasher,0.5
+320,1,Irregular,Refrigerator,0.5
+375,5,Regular,Television,0.6
+310,4,Irregular,Oven,0.5
+280,3,Regular,Freezer,0.5
+405,2,Regular,Vacuum Cleaner,0.7
+235,1,Irregular,Microwave,0.4
+365,5,Regular,Coffee Maker,0.6
+290,2,Regular,Toaster,0.5
+425,3,Regular,Iron,0.7
+395,4,Irregular,Water Heater,0.7
+330,1,Irregular,Blender,0.5
+365,2,Regular,Air Conditioner,0.6
+285,3,Regular,Stove,0.5
+420,4,Regular,Light Bulb,0.7
+260,1,Irregular,Heater,0.4
+340,5,Regular,Food Processor,0.6
+300,2,Regular,Ice Maker,0.5
+365,3,Regular,Ceiling Fan,0.6
+380,1,Irregular,Computer,0.7
+295,4,Regular,Toaster Oven,0.5
+330,2,Regular,Dryer,0.6
+390,3,Regular,Washing Machine,0.7
+415,5,Regular,Dishwasher,0.8
+350,1,Irregular,Refrigerator,0.6
+240,4,Irregular,Television,0.4
+310,2,Regular,Oven,0.5
+400,3,Regular,Freezer,0.7
+240,1,Irregular,Vacuum Cleaner,0.4
+365,5,Regular,Microwave,0.6
+285,4,Irregular,Coffee Maker,0.5
+325,3,Regular,Toaster,0.6
+370,1,Irregular,Iron,0.6
+415,2,Regular,Water Heater,0.7
+385,3,Regular,Blender,0.6
+345,4,Regular,Air Conditioner,0.6
+310,1,Irregular,Stove,0.5
+395,5,Regular,Light Bulb,0.7
+300,2,Regular,Heater,0.5
+420,3,Regular,Food Processor,0.7
+355,1,Irregular,Ice Maker,0.6
+400,4,Regular,Ceiling Fan,0.7
+315,3,Regular,Computer,0.5
+365,1,Irregular,Toaster Oven,0.6
+390,5,Regular,Dryer,0.7
+290,2,Regular,Washing Machine,0.5
+400,3,Regular,Dishwasher,0.7
+330,1,Irregular,Refrigerator,0.6
+285,4,Irregular,Television,0.5
+340,3,Regular,Oven,0.6
+390,1,Irregular,Freezer,0.7
+345,5,Regular,Vacuum Cleaner,0.6
+275,2,Regular,Microwave,0.5
+415,3,Regular,Coffee Maker,0.7
+315,1,Irregular,Toaster,0.5
+345,4,Regular,Iron,0.6
+400,5,Regular,Water Heater,0.7
+320,2,Regular,Blender,0.5
+390,3,Regular,Air Conditioner,0.7
+350,1,Irregular,Stove,0.6
+385,4,Regular,Light Bulb,0.7
+305,3,Regular,Heater,0.5
+415,1,Irregular,Food Processor,0.7
+325,2,Regular,Ice Maker,0.6
+360,3,Regular,Ceiling Fan,0.6
+385,5,Regular,Computer,0.7
+300,1,Irregular,Toaster Oven,0.5
+380,4,Regular,Dryer,0.7
+355,2,Regular,Washing Machine,0.6
+395,3,Regular,Dishwasher,0.7
+340,1,Irregular,Refrigerator,0.6
+275,4,Irregular,Television,0.5
+350,3,Regular,Oven,0.6
+400,1,Irregular,Freezer,0.7
+315,5,Regular,Vacuum Cleaner,0.6
+375,2,Regular,Microwave,0.6
+365,3,Regular,Coffee Maker,0.6
+310,1,Irregular,Toaster,0.5
+360,4,Regular,Iron,0.6
+415,5,Regular,Water Heater,0.7
+305,2,Regular,Blender,0
+,,,,
+345,2,Regular,Washing Machine,0.6
+450,3,Regular,Dryer,0.8
+275,1,Irregular,Dishwasher,0.5
+420,2,Regular,Refrigerator,0.7
+200,5,Regular,Television,0.4
+360,4,Irregular,Oven,0.6
+310,3,Regular,Freezer,0.5
+385,1,Irregular,Vacuum Cleaner,0.6
+250,4,Regular,Microwave,0.4
+295,2,Regular,Coffee Maker,0.5
+375,3,Regular,Toaster,0.6
+290,1,Irregular,Iron,0.5
+430,5,Regular,Water Heater,0.8
+260,2,Regular,Blender,0.5
+370,3,Regular,Air Conditioner,0.6
+415,4,Irregular,Furnace,0.7
+305,1,Irregular,Hair Dryer,0.5
+385,2,Regular,Stove,0.6
+200,3,Regular,Light Bulb,0.3
+240,4,Irregular,Heater,0.4
+350,1,Irregular,Food Processor,0.6
+275,2,Regular,Ice Maker,0.5
+390,3,Regular,Ceiling Fan,0.6
+325,5,Regular,Computer,0.5
+290,1,Irregular,Toaster Oven,0.5
+370,4,Regular,Dryer,0.6
+400,2,Regular,Washing Machine,0.7
+255,3,Regular,Dishwasher,0.5
+320,1,Irregular,Refrigerator,0.5
+375,5,Regular,Television,0.6
+310,4,Irregular,Oven,0.5
+280,3,Regular,Freezer,0.5
+405,2,Regular,Vacuum Cleaner,0.7
+235,1,Irregular,Microwave,0.4
+365,5,Regular,Coffee Maker,0.6
+290,2,Regular,Toaster,0.5
+425,3,Regular,Iron,0.7
+395,4,Irregular,Water Heater,0.7
+330,1,Irregular,Blender,0.5
+365,2,Regular,Air Conditioner,0.6
+285,3,Regular,Stove,0.5
+420,4,Regular,Light Bulb,0.7
+260,1,Irregular,Heater,0.4
+340,5,Regular,Food Processor,0.6
+300,2,Regular,Ice Maker,0.5
+365,3,Regular,Ceiling Fan,0.6
+380,1,Irregular,Computer,0.7
+295,4,Regular,Toaster Oven,0.5
+330,2,Regular,Dryer,0.6
+390,3,Regular,Washing Machine,0.7
+415,5,Regular,Dishwasher,0.8
+350,1,Irregular,Refrigerator,0.6
+240,4,Irregular,Television,0.4
+310,2,Regular,Oven,0.5
+400,3,Regular,Freezer,0.7
+240,1,Irregular,Vacuum Cleaner,0.4
+365,5,Regular,Microwave,0.6
+285,4,Irregular,Coffee Maker,0.5
+325,3,Regular,Toaster,0.6
+370,1,Irregular,Iron,0.6
+415,2,Regular,Water Heater,0.7
+385,3,Regular,Blender,0.6
+345,4,Regular,Air Conditioner,0.6
+310,1,Irregular,Stove,0.5
+395,5,Regular,Light Bulb,0.7
+300,2,Regular,Heater,0.5
+420,3,Regular,Food Processor,0.7
+355,1,Irregular,Ice Maker,0.6
+400,4,Regular,Ceiling Fan,0.7
+315,3,Regular,Computer,0.5
+365,1,Irregular,Toaster Oven,0.6
+390,5,Regular,Dryer,0.7
+290,2,Regular,Washing Machine,0.5
+400,3,Regular,Dishwasher,0.7
+330,1,Irregular,Refrigerator,0.6
+285,4,Irregular,Television,0.5
+340,3,Regular,Oven,0.6
+390,1,Irregular,Freezer,0.7
+345,5,Regular,Vacuum Cleaner,0.6
+275,2,Regular,Microwave,0.5
+415,3,Regular,Coffee Maker,0.7
+315,1,Irregular,Toaster,0.5
+345,4,Regular,Iron,0.6
+400,5,Regular,Water Heater,0.7
+320,2,Regular,Blender,0.5
+390,3,Regular,Air Conditioner,0.7
+350,1,Irregular,Stove,0.6
+385,4,Regular,Light Bulb,0.7
+305,3,Regular,Heater,0.5
+415,1,Irregular,Food Processor,0.7
+325,2,Regular,Ice Maker,0.6
+360,3,Regular,Ceiling Fan,0.6
+385,5,Regular,Computer,0.7
+300,1,Irregular,Toaster Oven,0.5
+380,4,Regular,Dryer,0.7
+355,2,Regular,Washing Machine,0.6
+395,3,Regular,Dishwasher,0.7
+340,1,Irregular,Refrigerator,0.6
+275,4,Irregular,Television,0.5
+350,3,Regular,Oven,0.6
+400,1,Irregular,Freezer,0.7
+315,5,Regular,Vacuum Cleaner,0.6
+375,2,Regular,Microwave,0.6
+365,3,Regular,Coffee Maker,0.6
+310,1,Irregular,Toaster,0.5
+360,4,Regular,Iron,0.6
+415,5,Regular,Water Heater,0.7
+305,2,Regular,Blender,0

@@ -1,0 +1,47 @@
+{% extends 'userauth/base.html' %}
+{% load static %}
+
+{% block title %}Signup{% endblock title %}
+
+{% block content %}
+<div class="w-full h-screen bg-[url('{% static 'images/wallpaper_bg.jpeg' %}')] bg-cover bg-center text-nunito">
+    <div class="w-full h-full flex flex-col justify-center items-center backdrop-blur-sm">
+        <div class="container max-w-md mx-auto flex-1 flex flex-col items-center justify-center py-4">
+            <form method="POST" >
+                {% csrf_token %}
+                <div class="bg-white px-10 py-8 rounded shadow-md text-black w-full">   
+                    <div class="flex justify-center flex-row pb-5">
+                        <a href="{% url 'home' %}" class="inline font-bold text-3xl">
+        <img src="{% static 'images/carbon_dp.jpg' %}" class="inline" height="80px" width="80px">
+        Carbon Score 
+                    </a>
+                </div>    
+                    {% comment %} <h1 class="mt-2 mb-6 text-3xl font-bold text-green-700 text-center font-nunito">Sign up</h1> {% endcomment %}
+                    <input type="text" class="block border border-grey-light w-full p-3 rounded mb-4" name="fullname"
+                        placeholder="Full Name" />
+
+                    <input type="text" class="block border border-grey-light w-full p-3 rounded mb-4" name="email"
+                        placeholder="Email" />
+
+                    <input type="password" class="block border border-grey-light w-full p-3 rounded mb-4"
+                        name="password" placeholder="Password" />
+                    <input type="password" class="block border border-grey-light w-full p-3 rounded mb-4"
+                        name="password2" placeholder="Confirm Password" />
+
+                    <button type="submit"
+                        class="w-full text-center py-3 rounded bg-green-700 text-white hover:bg-black focus:outline-none my-1">Create
+                        Account</button>
+
+                    
+                    <div class="text-light_grey text-center">
+                        Already have an account?
+                        <a class="no-underline border-b border-blue text-blue" href="{% url 'login' %}">
+                            Log in
+                        </a>.
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

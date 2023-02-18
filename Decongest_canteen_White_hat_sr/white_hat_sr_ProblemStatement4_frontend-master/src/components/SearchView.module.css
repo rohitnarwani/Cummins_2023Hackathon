@@ -1,0 +1,28 @@
+.searchView {
+    display: flex;
+    flex-direction: column;
+    /* margin: 20%; */
+}
+
+.searchItems {
+    display: inline-flex;
+    /* overflow-x: scroll; */
+    justify-content:space-evenly;
+}
+
+.searchItem {
+    margin: 1rem;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.searchBar {
+    all: unset;
+    background: white;
+    border-width: 0px;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0.7rem;
+}

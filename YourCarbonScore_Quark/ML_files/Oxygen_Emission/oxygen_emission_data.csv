@@ -1,0 +1,164 @@
+Plant Species,Oxygen Emission,Light Intensity,CO2 Concentration,Temperature
+Tulip,62,27,196,24
+Cactus,18,10,132,31
+Lavender,50,30,171,19
+Bamboo,72,45,198,29
+Fern,36,23,137,22
+Rose,58,28,165,26
+Moss,30,16,119,17
+Sunflower,81,51,202,23
+Pepper,27,15,129,30
+Daisy,46,26,154,20
+Chrysanthemum,69,44,195,28
+Bonsai,41,21,148,21
+Lilac,57,32,170,25
+Succulent,15,8,113,32
+Aloe Vera,22,12,121,33
+Orchid,54,34,162,18
+Jasmine,63,39,183,27
+Maple,76,49,197,30
+Ivy,39,20,144,21
+Dandelion,49,27,152,19
+Butterfly Bush,65,40,180,25
+Cherry Blossom,59,35,170,19
+Basil,38,19,142,24
+Mint,31,18,120,22
+Palm Tree,77,52,200,31
+Poinsettia,42,25,155,17
+Hibiscus,51,33,167,23
+Holly,66,41,182,24
+Amaryllis,53,31,161,22
+Zinnia,73,48,193,29
+Daffodil,60,36,174,20
+Lily,55,33,158,21
+Aster,70,42,188,28
+Fuchsia,45,24,148,23
+Marigold,68,43,186,26
+Mimosa,43,24,144,26
+Petunia,56,31,159,20
+Snapdragon,64,38,178,27
+Chamomile,35,17,129,18
+Hollyhock,80,50,199,30
+Anthurium,52,30,166,25
+Pansy,47,29,146,24
+Pine Tree,78,53,200,31
+Tulip Poplar,74,46,192,30
+Chrysanthemum,59,37,175,19
+Hydrangea,47,29,149,24
+Clematis,67,42,184,28
+Coneflower,63,39,173,25
+Azalea,49,27,150,21
+Phalaenopsis,54,35,163,18
+Hosta,41,22,139,20
+Palm Tree,70,44,190,29
+Narcissus,57,32,159,22
+Amaryllis,51,30,161,23
+Iris,56,34,168,21
+Lavender,31,19,127,19
+Carnation,52,31,162,20
+African Violet,48,28,154,22
+Aloe Vera,28,14,120,31
+Sunflower,75,47,198,
+Lobelia,53,30,159,18
+Fiddle Leaf Fig,76,50,194,28
+Begonia,39,22,143,20
+Jade Plant,23,12,125,25
+Sage,48,27,154,21
+Lantana,69,43,185,26
+Bird of Paradise,62,39,173,25
+Fuchsia,46,27,152,24
+Chives,29,16,129,20
+Bird's Nest Fern,32,19,133,21
+Mandevilla,51,31,161,23
+Lupine,59,34,166,19
+Money Tree,71,45,191,29
+Geranium,55,32,159,22
+Oregano,38,21,140,17
+Larkspur,65,40,183,27
+Peace Lily,42,24,145,21
+Wisteria,78,51,199,30
+Yucca,28,15,122,26
+Rhubarb,36,19,136,18
+Hosta,58,35,168,20
+Forsythia,64,39,177,24
+Lemongrass,47,27,150,22
+Lily of the Valley,50,28,153,18
+Aloe Vera,26,14,120,24
+Bougainvillea,70,44,189,28
+Columbine,56,33,162,19
+Bay Laurel,37,21,139,20
+Primrose,53,30,159,18
+Foxglove,72,46,195,27
+Hellebore,61,37,172,19
+Croton,43,25,146,23
+African Daisy,66,41,182,25
+Hoya,45,26,151,23
+Canna Lily,74,47,197,29
+Grevillea,79,52,200,31
+Neem,68,42,182,28
+Mango,57,34,161,24
+Tulsi,53,31,157,21
+Henna,46,27,144,22
+Jackfruit,75,48,193,29
+Betel Leaf,39,22,138,20
+Jatropha,67,40,179,27
+Amla,60,36,168,24
+Lemon Grass,50,28,153,23
+Peppermint,42,24,135,20
+Turmeric,56,33,160,22
+Cinnamon,64,39,175,26
+Ginger,51,30,153,23
+Sandalwood,70,44,187,28
+Rosewood,62,38,170,25
+Eucalyptus,47,28,146,22
+Coriander,45,26,143,21
+Banyan,80,52,200,30
+Banana,55,32,158,23
+Ashwagandha,53,30,155,22
+Saffron,41,23,130,19
+Cardamom,58,35,166,24
+Holy Basil,50,29,152,22
+Bay Leaf,46,26,144,21
+Nutmeg,61,37,173,25
+Fennel,43,24,140,21
+Teak,72,46,189,28
+Bamboo,69,43,184,27
+Mint,48,28,147,22
+Jasmine,55,32,159,23
+Coconut,70,44,189,28
+Areca Palm,54,31,157,22
+Tamarind,63,38,177,26
+Moringa,66,41,180,27
+Birch,55,33,156,20
+Redbud,63,38,176,22
+Dogwood,49,28,145,19
+Juniper,41,24,135,18
+Magnolia,70,44,190,25
+Lilac,59,35,166,23
+Cedar,48,28,144,19
+Buckeye,66,40,179,24
+Spruce,52,30,152,21
+Oak,75,49,198,27
+Holly,44,25,138,20
+Cypress,61,36,172,22
+Fir,54,32,155,20
+Cherry Blossom,47,27,142,18
+Sassafras,60,36,169,21
+Pine,68,43,186,25
+Maple,51,29,150,20
+Poplar,46,26,141,19
+Ginkgo,72,47,194,26
+Sweetgum,62,37,175,23
+Redwood,74,48,196,27
+Mimosa,42,24,131,17
+Sycamore,67,42,182,24
+Boxwood,56,33,160,21
+Sagebrush,43,25,136,18
+Black-eyed Susan,53,31,157,20
+Hackberry,64,39,178,22
+Bayberry,45,26,142,19
+Yarrow,50,29,148,20
+Crepe Myrtle,58,34,165,22
+Hickory,71,46,192,26
+Black Cherry,49,28,146,19
+Rhododendron,65,40,180,23
