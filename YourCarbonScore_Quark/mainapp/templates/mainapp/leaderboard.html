@@ -1,0 +1,83 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block title %}Leaderboard{% endblock title %}
+
+{% block content %}
+<div class= "py-4"></div>
+<p class="py-4 text-center text-green-900 text-3xl font-bold pt-16 drop-shadow-lg  hover:underline-offset-8">Know where your carbon score stand </p>  
+<div class="flex flex-col  overflow-x-hidden">
+    <div class="overflow-x-hidden sm:-mx-6 lg:-mx-8">
+      <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+        <div class="overflow-x-hidden flex justify-center">
+          
+          <table class="border border-2 text-center w-3/4">
+            <thead class="bg-white border-2">
+              <tr>
+                <th scope="col" class="text-lg font-bold text-gray-900 px-6 py-4 text-center">
+                  Rank
+                </th>
+                <th scope="col" class="text-lg font-bold text-gray-900 px-6 py-4 text-center">
+                  Name
+                </th>
+                <th scope="col" class="text-lg font-bold text-gray-900 px-6 py-4 text-center">
+                  Carbon Score
+                </th>                
+              </tr>
+            </thead>
+            {% for user in users %}
+            
+            <tbody>
+              {% if request.user.id == user.id %}
+              <tr class="bg-white border border-2 border-green-900 text-white transition duration-300 ease-in-out hover:bg-gray-100">
+                <td class="px-6 py-4 text-xl font-semibold text-gray-900 cursor-pointer">
+                  {{ forloop.counter }}
+                </td>
+                <td class="text-xl font-semibold text-gray-900 px-6 py-4">
+                  {% if request.user.id == user.id %}
+                    You
+                  {% else %}
+                    {{ user.fullname }}
+                  {% endif %}
+                </td>
+                <td class="text-xl font-semibold text-gray-900 px-6 py-4">
+                  {% if user.show %}
+                    {{ user.carbon_score }}
+                  {% else %}
+                    -
+                  {% endif %}
+                </td>            
+              </tr> 
+                  {% else %}                    
+              <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+                <td class="px-6 py-4 text-lg font-medium text-gray-900 cursor-pointer">
+                  {{ forloop.counter }}
+                </td>
+                <td class="text-lg text-gray-900 font-normal px-6 py-4">
+                  {% if request.user == user %}
+                    You
+                  {% else %}
+                    {{ user.fullname }}
+                  {% endif %}
+                </td>
+                <td class="text-lg text-gray-900 font-normal px-6 py-4">
+                  {% if user.show %}
+                    {{ user.carbon_score }}
+                  {% else %}
+                    -
+                  {% endif %}
+                </td>            
+              </tr>                
+              {% endif %}
+            </tbody>
+            {% endfor %}
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
+
+
+

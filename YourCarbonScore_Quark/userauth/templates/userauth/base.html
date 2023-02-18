@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;500;600;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        nunito: ["Nunito", "sans-serif"],
+                    },
+                    colors: {
+                        primary_red: '#c50d20',
+                        dark_grey: '#333439',
+                        light_grey: '#b4b4b4',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          
+        }
+      </style>
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+  {% if messages %}
+        
+  {% for message in messages %}
+  <div>
+    <div class="text-green-700 text-base px-6 py-4 border-0 rounded-lg relative bg-green-100">
+      <span class="text-xl inline-block mr-5 align-middle">
+        <i class="fas fa-bell"></i>
+      </span>
+      <span class="inline-block align-middle mr-8">
+       {{ message }}
+      </span>
+      <button class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none" onclick="closeAlert(event)">
+        <span>×</span>
+    
+      </button>
+    </div>
+    
+    
+  </div>
+  {% endfor %}
+{% endif %}
+
+<script>
+function closeAlert(event){
+let element = event.target;
+while(element.nodeName !== "BUTTON"){
+element = element.parentNode;
+}
+element.parentNode.parentNode.removeChild(element.parentNode);
+}
+</script>
+    {% block content %}{% endblock content %}
+
+</body>
+</html>
