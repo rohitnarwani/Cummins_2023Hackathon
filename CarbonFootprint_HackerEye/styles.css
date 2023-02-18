@@ -1,0 +1,126 @@
+*{
+  padding: 0;
+  margin:0;
+  font-family: sans-serif;
+
+}
+
+body{
+  background: black;
+}
+
+.container{
+  text-align: center;
+  position:relative;
+  top:2rem;
+  transform: translate(20px,10px);
+}
+
+.container span{
+  color:white;
+  text-transform: uppercase;
+  display:block;
+}
+
+.text1{
+  font-size:2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.75rem;
+  margin-bottom: 2rem;
+  background:black;
+  animation:text 10s 5;
+  position:relative;
+}
+
+
+.center{
+    position: absolute;
+    top: 150px;
+    left: 530px;
+    float: right;
+    margin: 0 0 20px 20px;
+}
+#earth{
+    background: url("https://i.ibb.co/0XcTy98/3-no-ice-clouds-16k.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    box-shadow: -20px -20px 20px rgba(0, 0, 0, 0.87) inset,0 0 13px black;
+    animation: move 400s linear alternate infinite;
+}
+@-webkit-keyframes move{
+   100%{background-position: 10000%;}
+}
+#earth::before{
+    content: '';
+    position: absolute;
+    .center-image img {display: inline-block;}
+    top: 265px;
+    left: 30px;
+    right: 20px;
+    width: 255px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.781);
+    filter: blur(12px);
+    border-radius: 100%;
+    animation: shadow 4s linear infinite alternate;
+    z-index: -1;
+}
+@-webkit-keyframes shadow{
+        100%{width: 300px;background: rgba(0, 0, 0, 0.918);}
+}
+@keyframes text {
+  0%{
+    color: black;
+    margin-bottom:-2.5rem;
+
+  }
+  30%{
+    letter-spacing: 2rem;
+    margin-bottom:-2.5rem;
+
+  }
+  85%{
+    letter-spacing: 0.5rem;
+    margin-bottom: -2.5rem;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.calculator{
+  text-align: center;
+  position:relative;
+  top:50rem;
+  transform: translate(20px,10px);
+}
+.calculator span{
+  color:white;
+  text-transform: uppercase;
+  display:block;
+}
+.text2{
+  font-size:1.5rem;
+  font-weight: 200;
+  letter-spacing: 0.75rem;
+  margin-bottom: 2rem;
+  background:black;
+  position:relative;
+}
+
+.button {
+  background-color: #D3D3D3;
+  border: none;
+  border-radius: 0.8em;
+  color: black;
+  padding: 15px 32px;
+  text-align: top;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
